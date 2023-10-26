@@ -32,8 +32,8 @@ function f(x, p, t)
     v = controller(x)
     T = K_τ / r * (v + z4 / r)
 
-    x = M(z1) \ (f_p(z1, z3) - [0 ; 1] * T)
-    return [z3, z4, x[1], x[2]]
+    tmp = M(z1) \ (f_p(z1, z3) - [0 ; 1] * T)
+    return [z3, z4, tmp[1], tmp[2]]
 end
 
 export f

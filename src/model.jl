@@ -3,9 +3,9 @@ using LinearAlgebra
 # wheeled inverted pendulum parameters
 l = 23.0        # [mm]
 r = 40.0        # [mm]
-θ_r = 277.26    # [kg * mm^2]
-m_r = 0.316     # [kg]   
-θ_w = 444.43    # [kg * mm^2]
+θ_r = 444.43    # [kg * mm^2]
+m_r = 0.316     # [kg]
+θ_w = 277.26    # [kg * mm^2]
 m_w = 0.021     # [kg]
 g = 0.981       # [mm / s^2]
 

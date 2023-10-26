@@ -22,11 +22,7 @@ M(z1) = [
 ]
 f_p(z1, z3) = m_r * l * sin(z1) * [g ; - r * z3 * z3]
 
-function f(x, p, t)
-    # v = p
-    # T = K_τ / r * (v + z4 / r)
-
-    controller = p
+function f(x, controller, t)
     z1, _, z3, z4 = x
 
     v = controller(x)

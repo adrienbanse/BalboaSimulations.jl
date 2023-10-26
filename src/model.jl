@@ -1,8 +1,5 @@
 using LinearAlgebra
 
-# definition of function 
-# f s.t. dx/dt = f(x, p, t)
-
 # wheeled inverted pendulum parameters
 l = 23.0        # [mm]
 r = 40.0        # [mm]

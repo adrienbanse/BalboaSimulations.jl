@@ -1,5 +1,4 @@
-module Model
-export f
+using LinearAlgebra
 
 # definition of function 
 # f s.t. dx/dt = f(x, p, t)
@@ -37,4 +36,4 @@ function f(x, p, t)
     return [z3, z4, x[1], x[2]]
 end
 
-end
+export f

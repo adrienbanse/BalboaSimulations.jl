@@ -1,4 +1,4 @@
-function constant(x, val)
+function constant(x, t, val)
     return val
 end
 

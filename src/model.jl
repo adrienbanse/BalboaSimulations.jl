@@ -22,7 +22,7 @@ f_p(z1, z3) = m_r * l * sin(z1) * [g; -r * z3 * z3]
 function f(x, controller, t)
     z1, _, z3, z4 = x
 
-    v = controller(x)
+    v = controller(x, t)
     T = K_τ / r * (v + z4 / r)
 
     tmp = M(z1) \ (f_p(z1, z3) - [0; 1] * T)

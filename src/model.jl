@@ -1,18 +1,18 @@
 using LinearAlgebra
 
 # wheeled inverted pendulum parameters
-l = 23.0        # [mm]
-r = 40.0        # [mm]
-R = 4.0         # [Ω]
-θ_r = 444.43    # [kg * mm^2]
-m_r = 0.316     # [kg]
-θ_w = 26.89     # [kg * mm^2]
-m_w = 0.021     # [kg]
-g = 9810.0      # [mm / s^2]
+l = 23.0 * 1e-3         # [m]
+r = 40.0 * 1e-3         # [m]
+R = 4.0                 # [Ω]
+θ_r = 444.43 * 1e-6     # [kg * m^2]
+m_r = 0.316             # [kg]
+θ_w = 2 * 26.89 * 1e-6  # [kg * m^2]
+m_w = 2 * 0.021         # [kg]
+g = 9.81                # [m / s^2]
 
 # dc motor parameters
-K = 25. / 41. * 0.506   # [V / rps]
-K_τ = 48.39             # [N * mm]
+K = 25 / 41 * 0.506     # [V / rps]
+K_τ = 48.39 / 1000      # [N * m]
 
 # z = [ϕ, x, ϕ_dot, x_dot]
 

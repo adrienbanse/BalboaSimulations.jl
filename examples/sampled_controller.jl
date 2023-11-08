@@ -12,7 +12,7 @@ tspan = (0, max_time)
 
 v_list = m[:, 1] ./ 1000.0 .* m[:, 2] ./ 400.   # [V]
 
-phi_list = deg2rad.(m[:, 5] ./ 1000.0)          # [rad] 
+phi_list = deg2rad.(m[:, 4] ./ 1000.0)          # [rad] 
 x_list = m[:, 3] ./ 4. ./ 1000.0                # [m] 
 phi_dot_list = deg2rad.(m[:, 5] ./ 1000.0)      # [rad / s]
 x_dot_list = m[:, 4] / 4. ./ 1000.0             # [m / s]
